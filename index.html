@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container" id="container">
+		<div class="header" id="header">
+			<div class="animate">Çağlar Boyu Savaş</div>
+		</div>
+		<div class="start">Karakterinizin İsmini Giriniz:
+			<hr><input type="text" id="nickname"> <button id="start"> Giriş Yap</button>
+		</div>
+		<div class="story display" id="map"><img src="map.png" alt="Dünya Haritası"></div>
+		<div class="story display" id="story1">
+
+		</div>
+		<div class="story display" id="story2">
+			Oyunun Kuralları<br><br>
+			Oyunda krallığının hazine, ordu ve halk durumu, ittifak durumu ve savaş çıktığı zaman savaşın seyri
+			bulunmaktadır.<br><br>Hazine durumu birim olarak gösterilir. Eğer 0'ın altına düşerse oyun
+			biter.<br><br>Ordu ve Halk'ın durumu `Çok Kötü`, `Kötü`,`Ortalama`,`İyi` ve `Mükemmel` olmak üzere 5
+			seviyede gösterilir. Durum `Kötü` ve altı olursa negatif, `İyi` ve üzeri olursa pozitif şeylerin yaşanma
+			ihtimali artar.<br><br>İttifak durumu diğer krallıklarla olan ilişkileri temsil eder. İlişkiler iyi olursa
+			`Korunuyor`, kötü olursa `Bozuldu` olarak gösterilir.<br><br>Savaş durumu `Mağlubiyet`,
+			`Kötü`,`Ortalama`,`İyi` ve `Zafer` olarak 5 seviyede
+			gösterilir. Savaşı `İyi` ve üzerinde bitirirseniz ekstra bonus, `Kötü` ve altında bitirirseniz ekstra kayıp
+			yaşarsınız. Eğer o an krallığın savaşta değil ise Savaş durumu `Barışta` olarak gözükecektir.
+		</div>
+		<div class="story display" id="story">
+			Kral olarak tahttaki ilk günün. Krallığının 3 adet büyük şehri bulunmakta. Bunlar Atina, Arkasya ve
+			Maline.<br><br>Atina, krallığın ortasında kalıyor ve en önemli noktası krallığın ticarethanesi
+			olması.<br><br>Maline ise kuzeyde yer alıyor ve denizle teması sayesinde krallığın sahip olduğu 10 adet gemi
+			burada yatıyor.<br><br>Denizin karşısında krallığınla iyi ilişkilere sahip olan Kuzey Machetus Krallığı
+			bulunmakta.<br><br>Doğu bölgesinde bulunan Arkasya'nın sınırı, uzun yıllardır savaşta olduğunuz ve son 25
+			yıldır barış sağlanmış olan Catalistan krallığıyla birleşik.<br><br>Krallığında yaşayan halkın madencilik,
+			tarım ve ticaretle uğraşmakta. Henüz buharlı makinelerin devri gelmedi, gelmesi de uzun yıllar sürecek gibi
+			gözüküyor.<br><br>Kuzey Machetus Krallığıyla olan anlaşmaya göre 10 adet gemiden 2 tanesi sonraki 10 yıl
+			boyunca onların kullanımına sunulacak. Bu, hazineden ve askeri gücünden kayıp anlamına geliyor. Ancak böyle
+			bir ittifakı bozmak da hiç mantıklı gelmiyor.<br><br>Seçim 1: Gemileri Ver<br>Seçim 2: Anlaşmayı Boz
+			<br><br><input type="text" class="active">
+		</div>
+		
+	</div>
+	<embed>
+	<audio loop id="song">
+		<source src="background-music.mp3" type="audio/mpeg">
+	</audio>
+	</embed>
+	<div class="hud" id="hud"><span>Hazine : 50000</span> | <span>Ordu : Ortalama</span> | <span>Halk : Ortalama</span> | <span>İttifak Durumu</span> : Korunuyor | <span>Savaş Durumu: Barışta</span></div>
+	<script src="javascript.js"></script>
+</body>
+
+</html>
